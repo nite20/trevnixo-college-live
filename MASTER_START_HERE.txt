@@ -1,0 +1,29 @@
+TREVNIXO MASTER PACK — COLLEGE MINI PROJECT DEMO
+
+PLEASE READ FIRST
+This package includes a SIMULATED online payment flow for college demonstration only. It does not connect to a bank, UPI app, card network, or payment gateway. No money is charged. Do not enter real card details, UPI PINs, OTPs, or banking credentials. Tell the examiner clearly that payment is simulated.
+
+RUN ON WINDOWS
+1. Extract the entire ZIP into a normal folder, e.g. Desktop\TREVNIXO_MASTER_DEMO.
+2. Make sure Node.js is installed (node -v and npm -v should work).
+3. Open the extracted folder.
+4. Double-click START_BACKEND.bat. Keep this window open. If asked, the .env file opens; use a private random ADMIN_TOKEN for local admin testing.
+5. Double-click START_TREVNIXO.bat in the same folder. Keep this second window open.
+6. Open http://localhost:3000 in Chrome.
+7. Check API health at http://localhost:4000/api/health.
+
+DEMO PAYMENT
+Add a product -> Cart -> Checkout -> fill delivery details -> choose Online Payment — Demo Mode -> Continue to Demo Payment.
+- Simulate Successful Payment: places a demo order labeled DEMO PAID — NOT REAL.
+- Simulate Failed Payment: no order is placed.
+- Cancel Payment: no order is placed.
+Cash on Delivery remains available.
+
+CHECK STORAGE
+After an order, check data/orders.json. After submitting feedback while API is running, check data/feedback.json. If the API is stopped, browser-local data may still work but backend JSON persistence will not.
+
+PRESENTATION NOTES
+Open PRESENTATION_AND_BLACKBOOK_NOTES.md and DEMO_PAYMENT_GUIDE.md. Replace college/teacher details, take screenshots from the running site, and mark test results only after testing them yourself.
+
+IMPORTANT
+This is a local college prototype, not a deployed production store. The current payment success is simulated. A real gateway requires merchant onboarding, server-side payment order creation, signature verification, webhooks, and secure server-only credentials. Do not claim real online payments are enabled.

@@ -1,0 +1,6 @@
+{
+  "name": "TREVNIXO",
+  "description": "Smart Finds. Everyday Life. Discover trending, useful problem-solving lifestyle essentials and everyday smart finds.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
